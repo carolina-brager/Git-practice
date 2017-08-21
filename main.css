@@ -1,0 +1,27 @@
+.Outer {
+  background-color: azure;
+  border: 1px solid aquamarine;
+  padding: 30px;
+  font-family: "open sans", sans-serif;
+}
+h1 {
+  font-family: "montserrat";
+}
+
+h2{
+  font-family: "montserrat";
+}
+
+a:link{
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
