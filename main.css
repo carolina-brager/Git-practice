@@ -2,6 +2,7 @@
   background-color: azure;
   border: 1px solid aquamarine;
   padding: 30px;
+  padding-bottom:90px;
   font-family: "open sans", sans-serif;
 }
 h1 {
@@ -12,6 +13,14 @@ h2{
   font-family: "montserrat";
 }
 
+.SocialMedia img{
+  display: inline-block;
+  float:left;
+  max-height: 50px;
+  max-width: 50px;
+  padding: 0px 50px 50px 10px;
+}
+
 a:link{
 	text-decoration: none;
 }
@@ -19,9 +28,12 @@ a:visited{
 	text-decoration: none;
 }
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+  cursor: pointer; 
+  cursor: hand;
 }
 
 a:active {
     text-decoration: underline;
 }
+
