@@ -37,3 +37,8 @@ a:active {
     text-decoration: underline;
 }
 
+span{
+  display:block;
+  float:right
+}
+
