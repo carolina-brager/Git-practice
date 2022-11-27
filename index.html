@@ -1,91 +1,40 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<link rel="stylesheet" type="text/css" href="main.css">
-	<title>Resume</title>
-</head>
-<body>
-	<div class = Outer>
-		<div class = Information>
-		<span><img src="https://avatars2.githubusercontent.com/u/24538261?v=4&s=460"></span>
-			<h1>CAROLINA BRAGER</h1>
-
-			<p><a href="mailto:cbrager@u.rochester.edu" target="_blank">cbrager@u.rochester.edu</a></p>
-			<p>(646) 477-2992</p>
-			<p><br></p>
-
-		</div>
-		<div class = Education>
-			<h3>EDUCATION</h3>
-			<p><b>University of Rochester</b><span>Rochester, NY</span></p>
-			<p><em>Bachelor of Science in Computer Science</em><span>expected May 2020</span></p>
-			<p>GPA: 3.42/4.00</p>
-			<ul>
-				<li><p>Minor in Electrical and Computer Engineering</p></li>
-				<li><p>Two times on the Dean's List</p></li>
-				<li><p>Relevant Coursework: Data Structures and Algorithms, Computation and Formal Systems, Design and Analysis of Efficient Algorithms, Mobile Application Development in Android</p></li>
-				<li><p>Team captain for the women's Ultimate Frisbee team (May 2018 - Current)</p></li>
-			</ul>
-			<p><br></p>
-
-		</div>
-		<div class = Experience>
-			<h3>EXPERIENCE</h3>
-			<p><b>University of Rochester</b><span>Rochester, NY</p>
-				<p><em>Teaching Assistant</em><span>January 2018 – Present</span></p>
-				<ul>
-					<li><p>Assist the professor by helping students when they have questions, grading assignments and exams, and monitoring quizzes and exams.</p></li>
-					<li><p>Design assignments to challenge students and develop their knowledge of programming in C and C++.</p></li>
-					<li><p>Offer office hours to answer any additional questions that students have.</p></li>
-				</ul>
-				<p><br></p>
-
-			<p><b>University of Connecticut</b><span>Storrs, CT</p>
-			<p><em>Research Experience for Undergaduates Student</em><span>June – August 2017</span></p>
-			<ul>
-				<li><p>Created a Python script to help with efficiency in the <a href="https://voter.engr.uconn.edu/voter/" target="_blank">Voting Technology and Research Center.</a></p></li>
-				<li><p>Designed the script to assist with the assembly of a file used with another piece of software in the lab.</p></li>
-				<li><p>Wrote a research paper describing the research performed and its applications.</p></li>
-			</ul>
-			<p><br></p>
-
-		</div>
-		<div class = PersonalProjects>
-			<h3>PERSONAL PROJECTS</h3>
-			<p><em><a href = "https://github.com/carolina-brager/DTT_Coding_Challenge">Android Application Test</a></em><span>May 2018</span></p>
-			<ul>
-				<li><p>Given only basic UI/UX files from a company as part of a coding challenge, copied an Android application that the company had previously developed.</p></li>
-				<li><p>Developed the entire application using Android Studio and, after a few rounds of feedback from the company, successfully produced a professional-level copy of the original application.</p></li>
-			</ul>
-			<p><em><a href = "https://github.com/carolina-brager/FingeringDots">iPhone Finger Twister Application</a></em><span>February 2017 - March 2017</span></p>
-			<ul>
-				<li><p>Created an iPhone application using Xcode where you played the game Twister with your fingers.</p></li>
-				<li><p>Learned the basics of the Swift coding language and application development.</p></li>
-			</ul>
-			<p><em><a href = "https://github.com/carolina-brager/CSC173/tree/master/CSC173_Project1">Automata Project</a></em><span>January 2017</span></p>
-			<ul>
-				<li><p>Simulated a deterministic finite automaton (DFA) and a non-deterministic finite automaton (NFA) using C for the class Computation and Formal Systems (CSC 173) with two classmates.</p></li>
-				<li><p>Responsible for the DFA files and the creation of several specific automata used to test the program.</p></li>
-			</ul>
-			<p><br></p>
-		</div>
-
-		<div class = Skills>
-			<h3>SKILLS</h3>
-			<p><b>Programming: </b>Proficient in Java, C, C++, Python, Android Studio, git, and the command line. Basic understanding of HTML, CSS, JavaScript, and Swift.</p>
-			<p><b>Languages: </b>Native English speaker, fluent in Spanish, proficient in French (speaking, reading, writing), basic in Dutch (speaking and understanding).</p>
-			<p><br></p>
-		</div>
-		<div class = SocialMedia>
-			<h3>SOCIAL MEDIA</h3>
-			<p><a href = "https://www.linkedin.com/in/carolina-brager-359bb8126/" target="_blank"><img src = "https://cdn0.iconfinder.com/data/icons/social-flat-rounded-rects/512/linkedin-256.png"></a></p>
-			<p><a href="https://github.com/carolina-brager" target="_blank"><img src = "https://image.flaticon.com/icons/svg/25/25231.svg"></a></p>
-			<p><a href="https://www.hackerrank.com/carolina_brager?hr_r=1" target="_blank"><img src="https://68.media.tumblr.com/ebdc4c0a7ef3e0f9ae58d908491be54d/tumblr_owwrna66z71upurcoo1_400.png"></a></p>
-			<p><a href="https://leetcode.com/cbrager/" target="_blank"><img src="https://68.media.tumblr.com/65a674d520e950a8fae1f3a001e84f43/tumblr_owwt9rtFZn1upurcoo1_500.png"></a></p>
-		</div>
-	</div>
-</body>
-
+  <head>
+    <title>Simple Map</title>
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+	<!-- <link rel="stylesheet" type="text/css" href="main.css">
+	<title>Resume</title> -->
+    <style>
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the sample page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 37.0902, lng: -95.7129},
+          zoom: 4.5
+        });
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5dUeAFNLei5RaJSzDUBhsjC9RtbrJvRA&callback=initMap"
+    async defer></script>
+  </body>
+</html>
 
 
 
